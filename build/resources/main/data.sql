@@ -33,16 +33,16 @@ INSERT INTO trains (train_number, train_name, train_type, source_station_id, des
                     fare_rate1_a, fare_rate2_a, fare_rate3_a, fare_rate_sl, fare_rate_cc, fare_rate2_s,
                     is_active, has_pantry, coach_type)
 VALUES 
-(1, '12301', 'Howrah Rajdhani Express', 'RAJDHANI', 1, 3, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(2, '12302', 'New Delhi Rajdhani Express', 'RAJDHANI', 3, 1, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(3, '12951', 'Mumbai Rajdhani Express', 'RAJDHANI', 1, 2, 24, 48, 192, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(4, '12952', 'New Delhi Rajdhani Express', 'RAJDHANI', 2, 1, 24, 48, 192, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(5, '12001', 'Bhopal Shatabdi Express', 'SHATABDI', 1, 12, 0, 0, 0, 0, 120, 0, 4.5, 2.8, 1.8, 0.9, 1.5, 0.6, true, true, 'LHB'),
-(6, '12002', 'New Delhi Shatabdi Express', 'SHATABDI', 12, 1, 0, 0, 0, 0, 120, 0, 4.5, 2.8, 1.8, 0.9, 1.5, 0.6, true, true, 'LHB'),
-(7, '12259', 'Sealdah Duronto Express', 'DURONTO', 1, 3, 24, 48, 180, 360, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(8, '22691', 'KSR Bengaluru Rajdhani Express', 'RAJDHANI', 1, 5, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
-(9, '12627', 'Karnataka Express', 'EXPRESS', 1, 5, 0, 48, 180, 480, 0, 72, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, false, 'LHB'),
-(10, '12621', 'Tamil Nadu Express', 'SUPERFAST', 1, 4, 24, 48, 180, 480, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB');
+('12301', 'Howrah Rajdhani Express', 'RAJDHANI', 1, 3, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('12302', 'New Delhi Rajdhani Express', 'RAJDHANI', 3, 1, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('12951', 'Mumbai Rajdhani Express', 'RAJDHANI', 1, 2, 24, 48, 192, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('12952', 'New Delhi Rajdhani Express', 'RAJDHANI', 2, 1, 24, 48, 192, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('12001', 'Bhopal Shatabdi Express', 'SHATABDI', 1, 12, 0, 0, 0, 0, 120, 0, 4.5, 2.8, 1.8, 0.9, 1.5, 0.6, true, true, 'LHB'),
+('12002', 'New Delhi Shatabdi Express', 'SHATABDI', 12, 1, 0, 0, 0, 0, 120, 0, 4.5, 2.8, 1.8, 0.9, 1.5, 0.6, true, true, 'LHB'),
+('12259', 'Sealdah Duronto Express', 'DURONTO', 1, 3, 24, 48, 180, 360, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('22691', 'KSR Bengaluru Rajdhani Express', 'RAJDHANI', 1, 5, 24, 48, 180, 0, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB'),
+('12627', 'Karnataka Express', 'EXPRESS', 1, 5, 0, 48, 180, 480, 0, 72, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, false, 'LHB'),
+('12621', 'Tamil Nadu Express', 'SUPERFAST', 1, 4, 24, 48, 180, 480, 0, 0, 4.5, 2.8, 1.8, 0.9, 1.2, 0.6, true, true, 'LHB');
 
 -- Insert train running days (1=Sun, 2=Mon, ..., 7=Sat)
 INSERT INTO train_running_days (train_id, day_of_week) VALUES 

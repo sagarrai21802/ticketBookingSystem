@@ -49,52 +49,52 @@ public class Train {
     private List<Integer> runningDays;
 
     // Seat availability for different classes
-    @Column(nullable = false)
+    @Column(name = "total_seats1_a", nullable = false)
     @Builder.Default
     private Integer totalSeats1A = 0;     // First AC
 
-    @Column(nullable = false)
+    @Column(name = "total_seats2_a", nullable = false)
     @Builder.Default
     private Integer totalSeats2A = 0;     // Second AC
 
-    @Column(nullable = false)
+    @Column(name = "total_seats3_a", nullable = false)
     @Builder.Default
     private Integer totalSeats3A = 0;     // Third AC
 
-    @Column(nullable = false)
+    @Column(name = "total_seats_sl", nullable = false)
     @Builder.Default
     private Integer totalSeatsSL = 0;     // Sleeper
 
-    @Column(nullable = false)
+    @Column(name = "total_seats_cc", nullable = false)
     @Builder.Default
     private Integer totalSeatsCC = 0;     // Chair Car
 
-    @Column(nullable = false)
+    @Column(name = "total_seats2_s", nullable = false)
     @Builder.Default
     private Integer totalSeats2S = 0;     // Second Sitting
 
     // Fare rates per kilometer
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate1_a", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRate1A = BigDecimal.valueOf(4.5);
 
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate2_a", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRate2A = BigDecimal.valueOf(2.8);
 
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate3_a", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRate3A = BigDecimal.valueOf(1.8);
 
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate_sl", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRateSL = BigDecimal.valueOf(0.9);
 
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate_cc", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRateCC = BigDecimal.valueOf(1.2);
 
-    @Column(precision = 10, scale = 2)
+    @Column(name = "fare_rate2_s", precision = 10, scale = 2)
     @Builder.Default
     private BigDecimal fareRate2S = BigDecimal.valueOf(0.6);
 
