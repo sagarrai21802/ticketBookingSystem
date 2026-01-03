@@ -8,7 +8,9 @@ group = 'com.irctc'
 version = '1.0.0'
 
 java {
-    sourceCompatibility = '17'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 configurations {
@@ -58,5 +60,5 @@ tasks.named('test') {
 
 // Gradle wrapper task
 tasks.named('wrapper') {
-    gradleVersion = '8.5'
+    gradleVersion = '9.2.1'
 }

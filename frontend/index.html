@@ -884,6 +884,7 @@
 
     <script>
         // Configuration - Change this if running frontend on different port
+        // IMPORTANT: For Vercel/Production deployment, change this URL to your deployed backend URL (e.g., https://your-backend.onrender.com/api)
         const BACKEND_PORT = 8080;  // Backend server port
         const API_BASE = `http://localhost:${BACKEND_PORT}/api`;
         let authToken = localStorage.getItem('authToken') || null;
