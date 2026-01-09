@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:8080/api'
+const API_URL = 'https://irctc-backend-qnll.onrender.com/api'
 
 function App() {
   const [trains, setTrains] = useState([])
