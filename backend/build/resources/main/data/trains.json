@@ -1,0 +1,95 @@
+[
+    {
+        "number": "12301",
+        "name": "Howrah Rajdhani Express",
+        "type": "RAJDHANI",
+        "source": "NDLS",
+        "destination": "HWH",
+        "departureTime": "17:00",
+        "arrivalTime": "10:00",
+        "seatsAvailable": 250,
+        "fare": 2500,
+        "runningDays": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ]
+    },
+    {
+        "number": "12951",
+        "name": "Mumbai Rajdhani Express",
+        "type": "RAJDHANI",
+        "source": "NDLS",
+        "destination": "BCT",
+        "departureTime": "16:35",
+        "arrivalTime": "08:35",
+        "seatsAvailable": 280,
+        "fare": 2200,
+        "runningDays": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ]
+    },
+    {
+        "number": "12001",
+        "name": "Bhopal Shatabdi Express",
+        "type": "SHATABDI",
+        "source": "NDLS",
+        "destination": "LKO",
+        "departureTime": "06:10",
+        "arrivalTime": "12:30",
+        "seatsAvailable": 120,
+        "fare": 1200,
+        "runningDays": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+        ]
+    },
+    {
+        "number": "12621",
+        "name": "Tamil Nadu Express",
+        "type": "SUPERFAST",
+        "source": "NDLS",
+        "destination": "MAS",
+        "departureTime": "22:30",
+        "arrivalTime": "07:00",
+        "seatsAvailable": 400,
+        "fare": 1800,
+        "runningDays": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+        ]
+    },
+    {
+        "number": "22691",
+        "name": "Bengaluru Rajdhani Express",
+        "type": "RAJDHANI",
+        "source": "NDLS",
+        "destination": "SBC",
+        "departureTime": "20:50",
+        "arrivalTime": "06:40",
+        "seatsAvailable": 200,
+        "fare": 2800,
+        "runningDays": [
+            "Mon",
+            "Thu"
+        ]
+    }
+]
