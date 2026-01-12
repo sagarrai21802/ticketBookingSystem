@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import LandingPage from './LandingPage'
 
 const API_URL = 'https://irctc-backend-qnll.onrender.com/api'
 
-function App() {
+// Booking App Component (the original app)
+function BookingApp() {
   const [trains, setTrains] = useState([])
   const [stations, setStations] = useState([])
   const [from, setFrom] = useState('')
@@ -103,7 +106,7 @@ function App() {
 
   return (
     <div className="app">
-      <header className="header">
+      <header className="booking-header">
         <h1>🚂 IRCTC Train Booking</h1>
         <p>Book train tickets online</p>
       </header>
@@ -346,9 +349,19 @@ function App() {
       )}
 
       <footer className="footer">
-        <p>Simple IRCTC Clone | Backend: Java Spring Boot | Frontend: React + Vite</p>
+        <p>IRCTC App | Backend: Java Spring Boot | Frontend: React + Vite</p>
       </footer>
     </div>
+  )
+}
+
+// Main App with Router
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/booking" element={<BookingApp />} />
+    </Routes>
   )
 }
 
