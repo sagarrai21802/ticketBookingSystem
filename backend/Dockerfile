@@ -29,5 +29,17 @@ COPY --from=build /app/build/libs/*.jar app.jar
 # Expose port
 EXPOSE 8080
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# JVM optimization flags for faster cold starts:
+# -XX:TieredStopAtLevel=1: Skip C2 compiler (faster startup, slightly slower runtime)
+# -XX:+UseSerialGC: Faster startup than G1GC for small apps
+# -Xms128m -Xmx256m: Constrained heap for Render free tier (512MB)
+# -XX:+UseContainerSupport: Respect container memory limits
+# -Dspring.backgroundpreinitializer.ignore=true: Skip background init
+ENTRYPOINT ["java", \
+    "-XX:TieredStopAtLevel=1", \
+    "-XX:+UseSerialGC", \
+    "-Xms128m", \
+    "-Xmx256m", \
+    "-XX:+UseContainerSupport", \
+    "-Dspring.backgroundpreinitializer.ignore=true", \
+    "-jar", "app.jar"]
